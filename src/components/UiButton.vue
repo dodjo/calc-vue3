@@ -1,0 +1,32 @@
+<template>
+  <button type="button" class="ui-button">
+    <slot name="default"/>
+  </button>
+</template>
+
+<script setup>
+
+</script>
+
+
+<style lang="scss" scoped>
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &:hover {
+    border-color: #646cff;
+  }
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+</style>
